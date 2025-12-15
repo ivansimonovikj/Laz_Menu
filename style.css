@@ -1,0 +1,40 @@
+/* ================================
+   Body
+================================ */
+body {
+  background-color: #fff6dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between menus */
+  margin: 0;
+  padding: 20px; /* padding so images don't touch edges */
+}
+
+/* ================================
+   Menu Images
+================================ */
+img {
+  width: 80%; /* scale with screen width */
+  max-width: 350px; /* prevent huge images on desktop */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 15px; /* optional rounded corners */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Optional: hover effect on desktop */
+img:hover {
+  transform: scale(1.03);
+}
+
+/* ================================
+   Mobile tweaks
+================================ */
+@media (max-width: 480px) {
+  img {
+    width: 95%; /* almost full width on phone */
+    max-width: none;
+  }
+}
